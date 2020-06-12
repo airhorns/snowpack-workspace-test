@@ -1,4 +1,6 @@
 import React from 'react';
+import { Utility } from "shared-ts/src/some-shared-code"
+import { OtherUtility } from "shared-js"
 import logo from './logo.svg';
 import './App.css';
 
@@ -9,17 +11,8 @@ function App({}: AppProps) {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        {Utility("snowpack is awesome!")}
+        {OtherUtility("but cross workspace typescript doesn't work yet")}
       </header>
     </div>
   );

@@ -1,0 +1,1 @@
+export const Utility = (str: string) => str.toUpperCase();
